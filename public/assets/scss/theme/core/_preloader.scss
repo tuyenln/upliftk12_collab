@@ -1,0 +1,45 @@
+/*--------------
+3.2.3 Preloader
+----------------*/
+/*-------|loader start|----------*/
+#loading {
+   width: 100vw;
+   height: 100vh;
+   background: $white;
+   position: fixed;
+   z-index: 999;
+   #preloader {
+      position: relative;
+      width: 100%;
+      height: 80px;
+      top: calc(50% - 50px);
+      text-align: center;
+      margin: 0 auto;
+      span {
+         position: absolute;
+         border: 2px solid $primary;
+         border-top:2px solid transparent;
+         border-radius: 999px;
+         &:nth-child(1){
+            width: 80px;
+            height: 80px;
+            left: calc(50% - 40px);
+            animation: spin-1 1s infinite ease;
+         }
+      }
+   }
+}
+@keyframes "spin-1"{
+   0% {
+      transform: rotate(360deg);
+      opacity: 1;
+   }
+   50% {
+      transform: rotate(180deg);
+      opacity: 0.5;
+   }
+   100% {
+      transform: rotate(0deg);
+      opacity: 1;
+   }
+}

@@ -1,0 +1,20 @@
+.team-v1 .team-item {
+  height: 960px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .team-v1 .team-item .team-content, .team-v1 .team-item .image-wrap {
+    height: 50%; }
+  .team-v1 .team-item .icon-wrap {
+    font-size: 65px; }
+  .team-v1 .team-item .overlay-content {
+    background-color: rgba(27, 28, 30, 0.73); }
+  .team-v1 .team-item:nth-child(2n) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse; }
+
+.team-v2 .sec-title {
+  margin-bottom: 5.625rem; }
